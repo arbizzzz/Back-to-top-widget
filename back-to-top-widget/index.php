@@ -77,13 +77,13 @@ class back_to_top extends WP_Widget {
             <label for="<?php echo $this->get_field_id( 'appear_in' ); ?>">
                 Appear When scrolled to:
             </label>
-            <input class="medium-text" type="number" name="<?php echo $this->get_field_name( 'appear_in'); ?>" id="<?php echo $this->get_field_id( 'appear_in' ); ?>" placeholder="<?php echo $appear_in;?>"/>(px)
+            <input value="<?php echo $instance['appear_in'];?>" class="medium-text" type="number" name="<?php echo $this->get_field_name( 'appear_in'); ?>" id="<?php echo $this->get_field_id( 'appear_in' ); ?>" placeholder="<?php echo $appear_in;?>"/>(px)
         </p>
         <p>
             <label for="<?php echo $this->get_field_id( 'scroll_speed' ); ?>">
                 Set scrolling speed:
             </label>
-            <input class="medium-text" value="<?php echo $this->get_field_name( 'scroll_speed'); ?>" type="number" name="<?php echo $this->get_field_name( 'scroll_speed'); ?>" id="<?php echo $this->get_field_id( 'scroll_speed' ); ?>" placeholder="<?php echo $scroll_speed;?>"/>(ms)
+            <input value="<?php echo $instance['scroll_speed'];?>" class="medium-text" value="<?php echo $this->get_field_name( 'scroll_speed'); ?>" type="number" name="<?php echo $this->get_field_name( 'scroll_speed'); ?>" id="<?php echo $this->get_field_id( 'scroll_speed' ); ?>" placeholder="<?php echo $scroll_speed;?>"/>(ms)
         </p>
 <?php }
   //Save Options
