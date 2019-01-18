@@ -1,0 +1,35 @@
+@-webkit-keyframes animatetop {
+    from {bottom:-300px; opacity:0}
+    to {bottom:25px; opacity:1}
+}
+@keyframes animatetop {
+    from {bottom:-300px; opacity:0}
+    to {bottom:25px; opacity:1}
+}
+#back_to_top_btn{
+    position: fixed;
+    bottom:25px;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+#back_to_top_btn.show{
+    opacity: 1;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.7s;
+    animation-name: animatetop;
+    animation-duration: 0.7s;
+}
+.bottom_left{
+    left:25px;
+}
+.bottom_right{
+    right:25px;
+}
+@media only screen and (max-width: 736px){
+    #back_to_top_btn.hide_mobile{
+        display: none !important;
+    }
+}
